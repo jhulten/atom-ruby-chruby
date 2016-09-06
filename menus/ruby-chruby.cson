@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle ruby-chruby'
+      'command': 'ruby-chruby:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'ruby-chruby'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'ruby-chruby:toggle'
+        }
+      ]
+    ]
+  }
+]
